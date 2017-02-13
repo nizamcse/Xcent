@@ -1,0 +1,13 @@
+include title-modules.pug
+
+mixin services(services_class,icon,heading,title,para)
+    div(class=services_class)
+        if icon
+            span
+                i(class=icon)
+        if title
+            +title(heading,title)
+        if para
+            each p in para
+                p=p
+
