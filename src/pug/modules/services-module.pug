@@ -5,6 +5,7 @@ mixin services(services_class,icon,heading,title,para)
         if icon
             span
                 i(class=icon)
+    div(class=service_text)
         if title
             +title(heading,title)
         if para
