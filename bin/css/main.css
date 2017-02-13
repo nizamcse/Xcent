@@ -4,13 +4,21 @@
   border-bottom: 1px solid #E2E2E2;
 }
 
-.service-section .service {
+.service-section .service-heading {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
 
-.service-section .service h6 {
+.service-section .service-heading .service-row {
+  position: relative;
+}
+
+.service-section .service-heading .service-row .service {
+  position: absolute;
+}
+
+.service-section .service-heading h6 {
   color: #6f6f6f;
   margin-top: 0px;
 }
