@@ -1,0 +1,36 @@
+
+
+
+node_modules
+
+
+npm-debug.log*
+
+*.iml
+
+## Directory-based project format:
+
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/shelf
+
+*.ipr
+*.iws
+
+
+.idea_modules/
+
+
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
