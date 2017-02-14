@@ -3,23 +3,17 @@ include ../modules/title-modules.pug
 include ../modules/social-menu.pug
 
 mixin team_cart()
-    .container
-        .cart-header
-            +headingSection('headingClass',2,"the xcentians",["meet the squad"],'horizontal')
 
+    .container
+        #section-heading
+             +headingSection(2,"the xcentians",["meet the squad"],'horizontal')
         .row
             .col-md-4
-                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'])
-                .squad-social-menu
-                    +socialMenu("social-menu",["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
+                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'],'menu-list',["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
 
             .col-md-4
-                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'])
-                .squad-social-menu
-                    +socialMenu("social-menu",["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
+                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'],'menu-list',["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
 
             .col-md-4
-                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'])
-                .squad-social-menu
-                    +socialMenu("social-menu",["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
+                +squad_cart('group','figClass','../../src/images/team-1.jpg',3,'jonathon trott',['ceo & founder'],'menu-list',["ion-ios-twitter","ion-ios-twitter","ion-ios-twitter"])
 

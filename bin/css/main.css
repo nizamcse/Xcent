@@ -1,0 +1,45 @@
+#section-heading {
+  text-align: center;
+}
+
+#section-heading hr {
+  width: 20px;
+  color: #1d1e1f;
+}
+
+#section-heading h2 {
+  text-transform: uppercase;
+}
+
+#section-heading p {
+  text-transform: capitalize;
+}
+
+.group {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top: none;
+  overflow: hidden;
+  padding: 80px;
+  text-align: center;
+}
+
+.group figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  z-index: -10;
+  position: relative;
+  background-size: cover;
+}
+
+.group ul {
+  display: block;
+  list-style: none;
+  position: absolute;
+}
+
+.group ul li a {
+  text-decoration: none;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 include title-modules.pug
-mixin squad_cart(group_cart,figClass,imgFormat,titleTag,title,paragraph)
+include social-menu.pug
+mixin squad_cart(group_cart,figClass,imgFormat,titleTag,title,paragraph,menuList,menu)
     div(class=group_cart)
         if imgFormat
             +figure(figClass,imgFormat)
@@ -7,12 +8,13 @@ mixin squad_cart(group_cart,figClass,imgFormat,titleTag,title,paragraph)
             +title(titleTag,title)
         if paragraph
             +paragraph(paragraph)
-
+        if menu
+            +socialMenu(menuList,menu)
 
 
 
 mixin figure(figClass,imgFormat)
-    fig(class=figClass)
+    figure(class=figClass)
         if imgFormat
             img(src=imgFormat)
 
@@ -21,12 +23,11 @@ mixin paragraph(paragraph)
         each paras in paragraph
             p=paras
 
-mixin headingSection(headingClass,titleTag,title,paragraph,horizone)
-    .heading(class=headingClass)
+mixin headingSection(titleTag,title,paragraph,horizone)
         if title
             +title(titleTag,title)
         if paragraph
             +paragraph(paragraph)
         if horizone
-            hr
+            hr(class=horizone)
 
