@@ -42,37 +42,37 @@
   color: #808080;
 }
 
-.our-service {
-  padding: 40px;
+.about-us-1 {
+  padding: 90px 0px;
 }
 
-.our-service .service-2-heading h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.about-us-1 .about-us-1-heading {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 
-.our-service .btn-group {
-  margin-top: 25px;
+.about-us-1 .about-us-1-heading .hr-01 {
+  border: 0;
+  height: 2px;
+  background-color: #000;
+  width: 50px;
 }
 
-.our-service .btn-group .btn-see {
-  background-color: #ff205a;
-  color: #fff;
-  margin-right: 10px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  border: 2px solid #ff205a;
+.about-us-1 .about .about-content {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.our-service .btn-group .btn-get {
-  background: transparent;
-  color: #ff205a;
-  border-radius: 2px;
-  text-transform: uppercase;
-  border: 2px solid #ff205a;
-  margin-right: 0px;
+.about-us-1 .about .about-content h4 {
+  margin-bottom: 30px;
 }
 
-.our-service .btn-group .btn-get:hover {
-  background-color: #ff9090;
+.responsive-img {
+  max-width: 100%;
+}
+
+.item-center {
+  align-items: center;
 }
