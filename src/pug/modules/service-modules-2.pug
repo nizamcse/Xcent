@@ -1,0 +1,7 @@
+mixin service_2(service_2_class,title,btn_grp,btn_name,button,btn_intro,button_intro)
+    div(class=service_2_class)
+        if title
+            h4=title
+    div(class=btn_grp)
+        a(class=btn_name)=button
+        a(class=btn_intro)=button_intro

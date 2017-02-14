@@ -10,15 +10,69 @@
   margin-bottom: 60px;
 }
 
-.service-section .service-heading .service-row {
-  position: relative;
-}
-
-.service-section .service-heading .service-row .service {
-  position: absolute;
-}
-
 .service-section .service-heading h6 {
   color: #6f6f6f;
   margin-top: 0px;
+}
+
+.service-section .service-content .service-item {
+  position: relative;
+}
+
+.service-section .service-content .service-item .service-icon {
+  position: absolute;
+  color: #ff205a;
+}
+
+.service-section .service-content .service-item .service-icon i {
+  font-size: 31px;
+}
+
+.service-section .service-content .service-item .service-text {
+  margin: 45px 0px;
+  padding: 0px 20px 0px 65px;
+}
+
+.service-section .service-content .service-item .service-text h5 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.service-section .service-content .service-item .service-text p {
+  color: #808080;
+}
+
+.our-service {
+  padding: 40px;
+}
+
+.our-service .service-2-heading h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.our-service .btn-group {
+  margin-top: 25px;
+}
+
+.our-service .btn-group .btn-see {
+  background-color: #ff205a;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: 2px solid #ff205a;
+}
+
+.our-service .btn-group .btn-get {
+  background: transparent;
+  color: #ff205a;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: 2px solid #ff205a;
+  margin-right: 0px;
+}
+
+.our-service .btn-group .btn-get:hover {
+  background-color: #ff9090;
 }

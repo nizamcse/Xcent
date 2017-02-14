@@ -1,0 +1,32 @@
+.our-service{
+    padding: 40px;
+    .service-2-heading {
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .btn-group{
+        margin-top: 25px;
+        .btn-see{
+            background-color: #ff205a;
+            color: #fff;
+            margin-right: 10px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            border: 2px solid #ff205a;
+        }
+        .btn-get{
+            background: transparent;
+            color: #ff205a;
+            border-radius: 2px;
+            text-transform: uppercase;
+            border: 2px solid #ff205a;
+            margin-right: 0px;
+            &:hover{
+                background-color:#ff9090;
+            }
+
+        }
+    }
+}
