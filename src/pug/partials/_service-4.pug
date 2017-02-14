@@ -1,0 +1,21 @@
+include ../modules/services-module.pug
+include ../modules/title-modules.pug
+mixin process()
+    section.service-process
+        div.process-heading
+            +title(6,"OUR WORLD CLASS")
+            +title(4,"PROCESS")
+        div.process-content
+            .container
+                .row.process-card
+                    .col-md-3.col-sm-6.col-xs-12
+                        +services("process","ion-leaf","process-text",5,"Planning",["Quisque tellus ris, adipisci viverra bibendum urna."])
+                    .col-md-3.col-sm-6.col-xs-12
+                        +services("process","ion-edit","process-text",5,"Design",["Quisque tellus ris, adipisci viverra bibendum urna."])
+                    .col-md-3.col-sm-6.col-xs-12
+                        +services("process","ion-code-working","process-text",5,"Coding",["Quisque tellus ris, adipisci viverra bibendum urna."])
+                    .col-md-3.col-sm-6.col-xs-12
+                        +services("process","ion-ios-printer-outline","process-text",5,"Publish",["Quisque tellus ris, adipisci viverra bibendum urna."])
+
+
+

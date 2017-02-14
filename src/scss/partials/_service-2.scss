@@ -30,3 +30,31 @@
         }
     }
 }
+.loving-us {
+  padding: 40px 0px;
+  margin-bottom: 10px;
+  background-color: #F5F5F5;
+  .align-items {
+    align-items: center;
+    h5 {
+      color: #292b2c;
+      .number {
+        color: #ff205a;
+      }
+    }
+    p {
+      color: #6F6F6F;
+    }
+    .btn-live {
+      background: transparent;
+      color: #ff205a;
+      border-radius: 2px;
+      text-transform: uppercase;
+      border: 1px solid #ff205a;
+      margin-right: 0px;
+      &:hover {
+        background-color: #ff9090;
+      }
+    }
+  }
+}

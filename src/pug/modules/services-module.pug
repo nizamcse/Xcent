@@ -1,14 +1,15 @@
 include title-modules.pug
 
 mixin services(services_class,icon,service_text,heading,title,para)
-    div(class=services_class)
-        if icon
-            span
-                i(class=icon)
-    div(class=service_text)
-        if title
-            +title(heading,title)
-        if para
-            each p in para
-                p=p
+    div.promo-box
+        div(class=services_class)
+            if icon
+                span
+                    i(class=icon)
+        div(class=service_text)
+            if title
+                +title(heading,title)
+            if para
+                each p in para
+                    p=p
 
