@@ -7,17 +7,23 @@ mixin servicesSection()
         +title(4,"Services")
       div.service-content
         .container
-            .row.service-row
+            .row
                 .col-md-4
-                    +services("service","ion-social-designernews-outline","service-text",4,"GRAPHICS DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                    div.service-item
+                        +services("service-icon","ion-paintbrush","service-text",5,"GRAPHICS DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
                 .col-md-4
-                    +services("","ion-ios-photos-outline","service-text",4,"WEB DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                    div.service-item
+                        +services("service-icon","ion-ios-photos-outline","service-text",5,"WEB DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
                 .col-md-4
-                    +services("","ion-ios-monitor-outline","service-text",4,"WEB DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
-            .row.service-row
+                    div.service-item
+                        +services("service-icon","ion-ios-monitor-outline","service-text",5,"WEB DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+            .row
                 .col-md-4
-                    +services("service","ion-ipad","service-text",4,"GAME DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                    div.service-item
+                        +services("service-icon","ion-ipad","service-text",5,"GAME DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
                 .col-md-4
-                    +services("","ion-scissors","service-text",4,"SEO EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                    div.service-item
+                        +services("service-icon","ion-scissors","service-text",5,"SEO EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
                 .col-md-4
-                    +services("","ion-ios-eye-outline","service-text",4,"UX EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                    div.service-item
+                        +services("service-icon","ion-ios-eye-outline","service-text",5,"UX EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
