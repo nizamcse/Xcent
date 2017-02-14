@@ -2,14 +2,14 @@ include ../modules/services-module.pug
 include ../modules/figure.pug
 mixin clients()
     section.clients-section
-        div.clients-heading
+        div.clients-heading.text-center
             +title(6,"CLIENTS ARE")
             +title(4,"LOVING US")
         div.clients-content
             .container
-                .row
+                .row.text-middle
                     .col-md-6.col-sm-12
-                        +figure("clients-img","../../bin/image/blog/1.jpg")
+                        +figure_100("clients-img","width-100","../../bin/image/blog/1.jpg")
                     .col-md-6.col-sm-12
                         .col-md-12.common
                             +services("service-icon","ion-code-working","service-text",5,"WE ARE PROFESSIONAL",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])

@@ -78,7 +78,7 @@
 }
 
 .our-service {
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .our-service .service-2-heading h4 {
@@ -110,4 +110,79 @@
 
 .our-service .btn-group .btn-get:hover {
   background-color: #ff9090;
+}
+
+.clients-section {
+  background-color: #fff;
+  border-bottom: 1px solid #E2E2E2;
+  border-top: 1px solid #E2E2E2;
+  padding: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients-section {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .clients-section {
+    padding: 15px;
+  }
+}
+
+.clients-section .clients-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clients-section .clients-heading h6 {
+  color: #6F6F6F;
+}
+
+.clients-section .clients-heading h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.clients-section .clients-content {
+  position: relative;
+  padding: 120px 0px 60px 0px;
+}
+
+.clients-section .clients-content .text-middle {
+  align-items: center;
+}
+
+.clients-section .clients-content .text-middle .clients-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients-section .clients-content .text-middle .common {
+  padding: 20px 0px 0 80px;
+  position: relative;
+}
+
+.clients-section .clients-content .text-middle .common .service-icon i {
+  color: red;
+  font-size: 44px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.clients-section .clients-content .text-middle .common h5 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.clients-section .clients-content .text-middle .common p {
+  color: #A2A2A2;
+  margin: 0 0 10px;
+}
+
+.width-100 {
+  width: 100%;
 }

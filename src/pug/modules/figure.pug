@@ -2,3 +2,6 @@ mixin figure(figureClass,image)
     figure(class=figureClass)
         img.responsive-img(src=image)
 
+mixin figure_100(figureClass,img_class,image)
+    figure(class=figureClass)
+        img(class=img_class,src=image)
