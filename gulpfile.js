@@ -26,7 +26,7 @@ gulp.task('js',function () {
 });
 
 gulp.task('image',function () {
-    gulp.src('src/image/*')
+    gulp.src('src/image/**/')
         .pipe(gulp.dest('bin/image'));
 });
 gulp.task('movelib',function () {
@@ -67,5 +67,3 @@ gulp.task('watchimg',function () {
 });
 
 gulp.task('default',['sass','pug','watchsass','watchpug','js','watchjs','image','watchimg']);
-
-gulp.task('default',['sass','pug','watchsass','watchpug','js','watchjs']);

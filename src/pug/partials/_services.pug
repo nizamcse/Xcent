@@ -1,5 +1,30 @@
 include ../modules/services-module.pug
 
 mixin servicesSection()
-    +services("service-1","ion-ios-home",4,"Title",["Para 1","para 2"])
+    section.service-section
+      div.service-heading
+        +title(6,"check our best")
+        +title(4,"Services")
+      div.service-content
+        .container
+            .row
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-paintbrush","service-text",5,"GRAPHICS DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-ios-photos-outline","service-text",5,"WEB DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-ios-monitor-outline","service-text",5,"WEB DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+            .row
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-ipad","service-text",5,"GAME DEVELOPMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-scissors","service-text",5,"SEO EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.col-sm-6.col-xs-12
+                    div.service-item
+                        +services("service-icon","ion-ios-eye-outline","service-text",5,"UX EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
 

@@ -1,0 +1,30 @@
+include ../modules/services-module.pug
+include ../modules/figure.pug
+include ../modules/single-button.pug
+mixin clients()
+    section.clients-section
+        div.clients-heading.text-center
+            +title(6,"CLIENTS ARE")
+            +title(4,"LOVING US")
+        div.clients-content
+            .container
+                .row.text-middle
+                    .col-md-6.col-sm-12
+                        +figure_100("clients-img","width-100","../../bin/image/blog/1.jpg")
+                    .col-md-6.col-sm-12
+                        .col-md-12.common
+                            +services("service-icon","ion-code-working","service-text",5,"WE ARE PROFESSIONAL",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                        .col-md-12.common
+                            +services("service-icon","ion-social-buffer-outline","service-text",5,"WE ARE CREATIVE",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                        .col-md-12.common
+                            +services("service-icon","ion-headphone","service-text",5,"24/7 GREAT SUPPORT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+    section.loving-us
+        .container
+            .row.align-items
+                .col-md-9.col-sm-8.col-xs-12
+                    h5 Call us today at
+                        span.number +123 2345 887
+                        | get free support
+                    p We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful
+                .col-md-3.col-sm-4.col-xs-12
+                    +button("btn btn-default btn-live","GET LIVE SUPPORT")

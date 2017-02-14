@@ -1,0 +1,40 @@
+.service-process{
+    padding: 40px 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #E2E2E2;
+    .process-heading {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        h6 {
+            color: #6F6F6F;
+        }
+        h4 {
+            color: #000000;
+            margin-top: 10px;
+        }
+    }
+    .process-content{
+        .process-card{
+           text-align: center;
+            .promo-box{
+                border-left:1px solid #dddddd;
+                border-right:1px solid #dddddd;
+                transition: all 450ms ease-in-out;
+                &:hover{
+                    border-left:1px solid #ff205a;
+                    border-right:1px solid #ff205a;
+                    i{
+                        color: #ff205a;
+                    }
+                }
+                .process{
+                    font-size: 60px;
+                    color: #8e7a7a;
+                    padding: 15px;}
+            }
+        }
+    }
+}
