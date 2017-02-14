@@ -1,0 +1,32 @@
+include title-modules.pug
+mixin squad_cart(group_cart,figClass,imgFormat,titleTag,title,paragraph)
+    div(class=group_cart)
+        if imgFormat
+            +figure(figClass,imgFormat)
+        if title
+            +title(titleTag,title)
+        if paragraph
+            +paragraph(paragraph)
+
+
+
+
+mixin figure(figClass,imgFormat)
+    fig(class=figClass)
+        if imgFormat
+            img(src=imgFormat)
+
+mixin paragraph(paragraph)
+    if paragraph
+        each paras in paragraph
+            p=paras
+
+mixin headingSection(headingClass,titleTag,title,paragraph,horizone)
+    .heading(class=headingClass)
+        if title
+            +title(titleTag,title)
+        if paragraph
+            +paragraph(paragraph)
+        if horizone
+            hr
+
