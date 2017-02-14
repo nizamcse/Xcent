@@ -1,5 +1,35 @@
 
 
 .about-us-1{
-  .about-us-1-heading{}
+  padding: 90px 0px;
+
+  .about-us-1-heading{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    .hr-01{
+      border: 0;
+      height: 2px;
+      background-color: #000;
+      width: 50px;
+    }
+  }
+  .about{
+    .about-content{
+      padding-left: 30px;
+      padding-right: 30px;
+      h4{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+.responsive-img{
+  max-width: 100%;
+}
+.item-center{
+  align-items: center;
 }
