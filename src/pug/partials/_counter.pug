@@ -1,0 +1,14 @@
+include ../modules/funfacts.pug
+mixin counter()
+    section.funfacts-1.text-center
+        #bgndVideo.player(data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}")
+        .container
+            .row.funfacts-wrapper
+               .col-md-3.col-sm-6.col-xs-12
+                    +fun("funfacts-box","ion-headphone",505,"PEOPLE LIKES OUR UI")
+               .col-md-3.col-sm-6.col-xs-12
+                    +fun("funfacts-box","ion-ios-keypad-outline",303,"SUPPORT OFFICERS")
+               .col-md-3.col-sm-6.col-xs-12
+                    +fun("funfacts-box","ion-hammer",404,"DESIGNERS WORKED")
+               .col-md-3.col-sm-6.col-xs-12
+                    +fun("funfacts-box","ion-social-snapchat-outline",202,"PROJECT MANAGER")

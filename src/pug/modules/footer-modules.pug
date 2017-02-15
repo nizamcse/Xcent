@@ -1,0 +1,18 @@
+include ../modules/squad.pug
+include ../modules/title-modules.pug
+
+mixin footer_title(titleTag,title,horizone,paragraph)
+    if title
+        +headingSection(titleTag,title)
+    if horizone
+        hr
+    if paragraph
+        +paragraph(paragraph)
+
+mixin menu(main_menu,menu,icon)
+    ul(class=main_menu)
+        each sub_menu in menu
+            li
+                if icon
+                    i=icon
+                    a(src=sub_menu)

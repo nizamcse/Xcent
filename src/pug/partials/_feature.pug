@@ -1,0 +1,21 @@
+include ../modules/feature.pug
+include ../modules/squad.pug
+
+
+mixin feature_in()
+    .container
+        .feature-head
+            +headingSection(2,'A great service',['all over the world'],'')
+        .row
+            .col-md-4
+                +feature('feature-text','feature-section',["ion-service"],3,'services',["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"])
+
+            .col-md-4
+                +feature('feature-text','feature-section',["ion-service"],3,'services',["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"])
+
+            .col-md-4
+                +feature('feature-text','feature-section',["ion-service"],3,'services',["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"])
+
+
+
+

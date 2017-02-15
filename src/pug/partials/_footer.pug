@@ -1,0 +1,38 @@
+include ../modules/squad.pug
+include ../modules/title-modules.pug
+include ../modules/social-menu.pug
+include ../modules/gallery.pug
+
+mixin footer()
+    .container
+        .row
+            .col-md-3
+                .logo-footer
+                    +figure("","a.jpg")
+
+            .col-md-3
+                .footer-description
+                    +paragraph(["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil."])
+
+            .offset-md-3
+                .gallery-footer
+                    +gallery([{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"}])
+
+        .row
+            .col-md-4
+                .coyright
+                    +paragraph(["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil."])
+
+            .col-md-4
+                .footer-menu-list
+                    +socialMenu("footer-menu",["ion-ios-facebook","ion-ios-facebook","ion-ios-facebook"])
+
+            .col-md-4
+                .footer-link-privacy
+                    span
+                        a
+                            +paragraph(["author"])
+
+                    span
+                        a
+                            +paragraph(["privacy required"])
