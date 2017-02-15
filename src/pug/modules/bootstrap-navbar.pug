@@ -1,0 +1,17 @@
+mixin bootstrapNavbar(navbarClass,iconClass,logo)
+
+    .navbar.navbar-toggleable-md.navbar-light.bg-faded(class=navbarClass)
+      button.navbar-toggler.navbar-toggler-right(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
+        span(class=iconClass)
+      a.navbar-brand(href="index.html")
+        img.brand-logo(src=logo)
+
+      .collapse.navbar-collapse(id="navbarSupportedContent")
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="#") Home
+                span.sr-only current
+          li.nav-item
+            a.nav-link(href="#") Link
+          li.nav-item
+            a.nav-link.disabled(href="#") Disabled
