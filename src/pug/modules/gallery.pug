@@ -1,0 +1,7 @@
+include ../modules/squad.pug
+
+mixin gallery(links,figClass,src)
+    if src
+        each link in links
+            a(class=link.link)
+                +figure(figClass,src)

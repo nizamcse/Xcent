@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-#section-heading {
-  text-align: center;
-}
-
-#section-heading hr {
-  width: 20px;
-  color: #1d1e1f;
-}
-
-#section-heading h2 {
-  text-transform: uppercase;
-}
-
-#section-heading p {
-  text-transform: capitalize;
-}
-
-.group {
-  border: 1px solid #ddd;
-  border-bottom: none;
-  border-top: none;
-  overflow: hidden;
-  padding: 80px;
-  text-align: center;
-}
-
-.group figure img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 100%;
-  z-index: -10;
-  position: relative;
-  background-size: cover;
-}
-
-.group ul {
-  display: block;
-  list-style: none;
-  position: absolute;
-}
-
-.group ul li a {
-  text-decoration: none;
-  text-align: center;
-=======
 .service-section {
   background-color: #fff;
   border-top: 1px solid #E2E2E2;
@@ -86,6 +40,62 @@
 
 .service-section .service-content .service-item .service-text p {
   color: #808080;
+}
+
+#section-heading {
+  text-align: center;
+}
+
+#section-heading hr {
+  width: 20px;
+  color: #1d1e1f;
+}
+
+#section-heading h2 {
+  text-transform: uppercase;
+}
+
+#section-heading p {
+  text-transform: capitalize;
+}
+
+.group {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top: none;
+  overflow: hidden;
+  padding: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.group figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  z-index: -10;
+  background-size: cover;
+}
+
+.group ul {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30%;
+  background-color: #419641;
+}
+
+.group ul li {
+  display: block;
+}
+
+.group ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 .about-us-1 {
@@ -328,5 +338,40 @@
   font-size: 60px;
   color: #8e7a7a;
   padding: 15px;
->>>>>>> acd1ab84fbff0a1cc76bee5191df69e80078a219
+}
+
+.feature-head {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-head h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.feature-head p {
+  text-transform: capitalize;
+}
+
+.feature-section p i {
+  font-size: 40px;
+}
+
+.feature-text {
+  border: 1px solid darkgrey;
+  border-top: none;
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-heading {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.section-heading hr {
+  width: 50px;
 }

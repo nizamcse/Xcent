@@ -1,0 +1,26 @@
+.feature-head{
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  h2{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p{
+    text-transform: capitalize;
+  }
+}
+.feature-section{
+  p{
+    i{
+      font-size: 40px;
+    }
+  }
+}
+.feature-text{
+  border: 1px solid darkgrey;
+  border-top: none;
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}

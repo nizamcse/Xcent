@@ -1,0 +1,15 @@
+include title-modules.pug
+include squad.pug
+
+mixin feature(feature_text,feature_section,icon,titleTag,title,paragraph)
+    div(class=feature_section)
+        if icon
+            p
+                i(class=icon)
+    div(class=feature_text)
+        if title
+            +title(titleTag,title)
+        if paragraph
+            +paragraph(paragraph)
+
+
