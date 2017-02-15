@@ -1,4 +1,47 @@
-<<<<<<< HEAD
+.service-section {
+  background-color: #fff;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.service-section .service-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.service-section .service-heading h6 {
+  color: #6f6f6f;
+  margin-top: 0px;
+}
+
+.service-section .service-content .service-item {
+  position: relative;
+}
+
+.service-section .service-content .service-item .service-icon {
+  position: absolute;
+  color: #ff205a;
+}
+
+.service-section .service-content .service-item .service-icon i {
+  font-size: 31px;
+}
+
+.service-section .service-content .service-item .service-text {
+  margin: 45px 0px;
+  padding: 0px 20px 0px 65px;
+}
+
+.service-section .service-content .service-item .service-text h5 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.service-section .service-content .service-item .service-text p {
+  color: #808080;
+}
+
 #section-heading {
   text-align: center;
 }
@@ -43,49 +86,6 @@
 .group ul li a {
   text-decoration: none;
   text-align: center;
-=======
-.service-section {
-  background-color: #fff;
-  border-top: 1px solid #E2E2E2;
-  border-bottom: 1px solid #E2E2E2;
-}
-
-.service-section .service-heading {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-}
-
-.service-section .service-heading h6 {
-  color: #6f6f6f;
-  margin-top: 0px;
-}
-
-.service-section .service-content .service-item {
-  position: relative;
-}
-
-.service-section .service-content .service-item .service-icon {
-  position: absolute;
-  color: #ff205a;
-}
-
-.service-section .service-content .service-item .service-icon i {
-  font-size: 31px;
-}
-
-.service-section .service-content .service-item .service-text {
-  margin: 45px 0px;
-  padding: 0px 20px 0px 65px;
-}
-
-.service-section .service-content .service-item .service-text h5 {
-  margin-bottom: 15px;
-  color: #444;
-}
-
-.service-section .service-content .service-item .service-text p {
-  color: #808080;
 }
 
 .about-us-1 {
@@ -328,7 +328,6 @@
   font-size: 60px;
   color: #8e7a7a;
   padding: 15px;
->>>>>>> acd1ab84fbff0a1cc76bee5191df69e80078a219
 }
 
 .our-partners {
