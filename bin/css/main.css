@@ -154,6 +154,118 @@
   display: block;
 }
 
+#section-heading {
+  text-align: center;
+}
+
+#section-heading hr {
+  width: 20px;
+  color: #1d1e1f;
+}
+
+#section-heading h2 {
+  text-transform: uppercase;
+}
+
+#section-heading p {
+  text-transform: capitalize;
+}
+
+.group {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top: none;
+  overflow: hidden;
+  padding: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.group figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  z-index: -10;
+  background-size: cover;
+}
+
+.group ul {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30%;
+  background-color: #419641;
+}
+
+.group ul li {
+  display: block;
+}
+
+.group ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+#section-heading {
+  text-align: center;
+}
+
+#section-heading hr {
+  width: 20px;
+  color: #1d1e1f;
+}
+
+#section-heading h2 {
+  text-transform: uppercase;
+}
+
+#section-heading p {
+  text-transform: capitalize;
+}
+
+.group {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top: none;
+  overflow: hidden;
+  padding: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.group figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  z-index: -10;
+  background-size: cover;
+}
+
+.group ul {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30%;
+  background-color: #419641;
+}
+
+.group ul li {
+  display: block;
+}
+
+.group ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
 .about-us-1 {
   padding: 90px 0px;
 }
