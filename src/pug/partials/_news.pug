@@ -1,0 +1,38 @@
+include ../modules/title-modules.pug
+include ../modules/figure.pug
+mixin our_news()
+    section.news-letter
+        div.news-heading
+            +title(6,"CHECK OUR")
+            +title(4,"LATEST NEWS")
+        .container
+            .row.news-card
+                .col-md-4.col-sm-6.col-xs-12
+                    div.news-img-card
+                        +figure("news-img","../../bin/image/work/01.jpg")
+                        div.news-card-content
+                            h5 Design Trends That We Will See Taking Over Web Design
+                            div.paragraph
+                                p
+                                    span.sub Article
+                                    span.date 01 Oct
+                .col-md-4.col-sm-6.col-xs-12
+                    div.news-img-card
+                        +figure("news-img","../../bin/image/work/02.jpg")
+                        div.news-card-content
+                            h5 How to Use Clipping Mask in Photoshop Successfully
+                            div.paragraph
+                                p
+                                    span.sub Video Tutorial
+                                    span.date 28 Sep
+                .col-md-4.col-sm-6.col-xs-12
+                    div.news-img-card
+                        +figure("news-img","../../bin/image/work/03.jpg")
+                        div.news-card-content
+                            h5 Why Gadgets are Absolutely Necessary for All Designers
+                            div.paragraph
+                                p
+                                    span.sub Interview
+                                    span.date 26 Sep
+
+
