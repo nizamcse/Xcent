@@ -1,0 +1,19 @@
+include ../modules/directive-widget.pug
+
+mixin whyChoseUs()
+    section.why-chose-us
+        div.container
+            .row
+                .col-md-4.offset-md-4
+                    +directive("chose-us-widget","directive right-down","vertical-down","PROFESSIONAL","","We are very professional to our duty. Try to do the best of ours and provide the best quality of your products.")
+            .row
+                .col-md-4
+                    +directive("chose-us-widget","directive top-right","normal","EXPERIENCED","","We are very professional to our duty. Try to do the best of ours and provide the best quality of your products.")
+                .col-md-4
+                    .we-are-middle
+                        span.text-sp WE ARE
+                .col-md-4
+                    +directive("chose-us-widget","directive down-left","normal","EXPERIENCED","","We are very professional to our duty. Try to do the best of ours and provide the best quality of your products.")
+            .row
+                .col-md-4.offset-md-4
+                    +directive("chose-us-widget","directive left-top","vertical-up","PROFESSIONAL","","We are very professional to our duty. Try to do the best of ours and provide the best quality of your products.")
