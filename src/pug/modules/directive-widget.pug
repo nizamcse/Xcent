@@ -1,0 +1,8 @@
+mixin directive(wraperClass,directiveCLass,directiveTextClass,directiveText,title,para)
+    .directive-widget(class=wraperClass)
+        .directive-area(class=directiveCLass)
+            .directive-text(class=directiveTextClass)=directiveText
+        .content
+            h5=title
+            p=para
+
