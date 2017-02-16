@@ -315,7 +315,6 @@
   align-items: center;
 }
 
-<<<<<<< HEAD
 .our-service {
   padding: 40px 0px;
 }
@@ -613,7 +612,101 @@
 
 .news-letter .news-img-card .news-card-content .paragraph .date {
   padding: 0px 15px;
-=======
+}
+
+.service-section {
+  background-color: #fff;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.service-section .service-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.service-section .service-heading h6 {
+  color: #6f6f6f;
+  margin-top: 0px;
+}
+
+.service-section .service-content .service-item {
+  position: relative;
+}
+
+.service-section .service-content .service-item .service-icon {
+  position: absolute;
+  color: #ff205a;
+}
+
+.service-section .service-content .service-item .service-icon i {
+  font-size: 31px;
+}
+
+.service-section .service-content .service-item .service-text {
+  margin: 45px 0px;
+  padding: 0px 20px 0px 65px;
+}
+
+.service-section .service-content .service-item .service-text h5 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.service-section .service-content .service-item .service-text p {
+  color: #808080;
+}
+
+.about-us-1 {
+  padding: 90px 0px;
+}
+
+.about-us-1 .about-us-1-heading {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.about-us-1 .about-us-1-heading .hr-01 {
+  border: 0;
+  height: 2px;
+  background-color: #000;
+  width: 50px;
+}
+
+.about-us-1 .about .about-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-us-1 .about .about-content h4 {
+  margin-bottom: 30px;
+}
+
+.sliced {
+  position: relative;
+  overflow: hidden;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.tile {
+  background-color: red;
+  position: absolute;
+  transform: scale(0);
+  transition: all 10s ease-in-out;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+.item-center {
+  align-items: center;
+}
+
 .directive-widget {
   padding: 15px;
   text-align: center;
@@ -768,5 +861,4 @@
   100% {
     transform: translateX(0);
   }
->>>>>>> dev-bipresh
 }
