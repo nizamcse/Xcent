@@ -1,0 +1,185 @@
+.default-nav {
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: $bg-color-1;
+  padding: 10px 15px;
+  .zious-brand{
+    display: inline-block;
+    float: left;
+    img{
+      max-height: 40px;
+      padding:5px 15px;
+    }
+  }
+  .zious-toggle-nav{
+    display: inline-block;
+    float: right;
+    padding: 7px 15px;
+    line-height: 20px;
+    font-size: 36px;
+    color: #fff;
+  }
+}
+.zious-sidebar-nav {
+  width: 300px;
+  margin-top: 70px;
+  position: fixed;
+  background-color: #f7f7f7;
+  height: 100%;
+  top:0;
+  right:0;
+  margin-top: 0;
+  @include box_shadow(1);
+  .nav-header{
+    display: table;
+    width: 100%;
+    padding: 7px 0px;
+    background-color: #d84c67;
+    .header-left{
+      display: table-cell;
+      vertical-align: middle;
+      padding: 15px 15px;
+      font-size:18px;
+      font-weight: 300;
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      &:hover,&:focus{
+        text-decoration: none;
+      }
+      i{
+        margin-right:10px;
+      }
+    }
+    .header-right{
+      display: table-cell;
+      vertical-align: middle;
+      padding: 15px 15px;
+      font-size:18px;
+      text-align: right;
+      color: #fff;
+      text-decoration: none;
+      &hover,&:focus{
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.zious-vertical-nav{
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  list-style: none;
+  li{
+    display: block;
+    a{
+      text-decoration: none;
+      padding: 15px 15px;
+      display: block;
+      border-bottom: 1px solid #ddd;
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover,&:focus{
+        text-decoration: none;
+        color: #333;
+      }
+    }
+  }
+}
+
+.social-menu-fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  padding: 30px 15px;
+  background-color: #ededed;
+  .zious-social-nav{
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      margin: 5px;
+      a{
+        display: table;
+        text-decoration: none;
+        @include box_shadow(1);
+        padding:10px;
+        width: 46px;
+        height: 46px;
+        border-radius: 3px;
+        background-color: #dddddd;
+        .icon{
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+.tiles {
+  left: 0;
+  .zious-vertical-nav {
+    margin: 0;
+    padding: 10px 0;
+    display: block;
+    list-style: none;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      float: left;
+      width: 90px;
+      margin: 5px;
+      a {
+        text-decoration: none;
+        padding: 15px 5px;
+        display: block;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin: 10px auto;
+        @include box_shadow(1);
+        .middle-menu {
+          display: block;
+          top: 50%;
+          position: relative;
+          transform: translateY(-50%);
+          text-align: center;
+          .icon{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+          }
+          .text{
+            display: block;
+            font-family: 'Roboto',serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+          }
+        }
+        &:hover, &:focus {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+  }
+}

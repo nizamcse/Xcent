@@ -15,3 +15,36 @@ mixin bootstrapNavbar(navbarClass,iconClass,logo)
             a.nav-link(href="#") Link
           li.nav-item
             a.nav-link.disabled(href="#") Disabled
+
+
+
+mixin navbarToggle(navClass,src,ulClass,icon)
+    nav.zious-nav(class=navClass)
+        a.zious-brand(href="#")
+            img.zious-logo(src=src,alt="LOGO")
+        a.zious-toggle-nav(href="#")
+            i(class=icon)
+
+
+mixin toggleNavMenu(navlist)
+    ul.zious-vertical-nav
+        each list in navlist
+            li
+                a(href="#")=list
+
+mixin socialNavMenu(navlist)
+    ul.zious-social-nav
+        each list in navlist
+            li
+                a(href="#")
+                    span.icon
+                        i(class=list)
+mixin socialNavMenu_2(navlist)
+    ul.zious-vertical-nav
+        each list in navlist
+            li
+                a(href="#")
+                    span.middle-menu
+                        span.icon
+                            i(class=list.icon)
+                        span.text=list.text

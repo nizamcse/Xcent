@@ -1,0 +1,34 @@
+include ../modules/bootstrap-navbar.pug
+
+mixin defaultToggleNav()
+    +navbarToggle('default-nav','../image/logo.png','default-navbar','ion-navicon')
+
+mixin sidebar()
+    .zious-sidebar-nav
+        div.nav-header
+            a.header-left(href="#")
+                i(class='ion-navicon')
+                span.title MENU
+
+            a.header-right(href="#")
+                i(class='ion-close')
+
+        +toggleNavMenu(['Home','About','Gallery','Services','Contact'])
+
+        .social-menu-fixed-bottom
+            +socialNavMenu(['ion-social-facebook-outline','ion-social-github-outline','ion-social-instagram-outline','ion-social-googleplus-outline'])
+
+mixin sidebar_2()
+    .zious-sidebar-nav.tiles
+        div.nav-header
+            a.header-left(href="#")
+                i(class='ion-navicon')
+                span.title MENU
+
+            a.header-right(href="#")
+                i(class='ion-close')
+
+        +socialNavMenu_2([{'text':'Home','icon':'ion-ios-home-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'},{'text':'About','icon':'ion-ios-people-outline'}])
+
+        .social-menu-fixed-bottom
+            +socialNavMenu(['ion-social-facebook-outline','ion-social-github-outline','ion-social-instagram-outline','ion-social-googleplus-outline'])
