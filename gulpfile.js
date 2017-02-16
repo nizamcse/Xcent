@@ -1,6 +1,7 @@
 var gulp= require('gulp');
     sass= require('gulp-sass');
     pug= require('gulp-pug');
+var sourcemaps = require('gulp-sourcemaps');
 
 var sassOption = {
     errLogToConsole: true,
@@ -11,7 +12,9 @@ var sassOption = {
 
 gulp.task('sass',function () {
     gulp.src('src/scss/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass(sassOption))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('bin/css/'));
 });
 gulp.task('pug',function () {
