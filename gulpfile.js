@@ -52,6 +52,8 @@ gulp.task('movelib',function () {
         .pipe(gulp.dest('bin/final-product/lib/jquery/'));
     gulp.src('node_modules/tether/dist/js/*.min.js')
         .pipe(gulp.dest('bin/final-product/lib/tether/'));
+    gulp.src('node_modules/waypoints/lib/*waypoints.min.js')
+        .pipe(gulp.dest('bin/final-product/lib/waypoints/'));
 
 });
 gulp.task('watchsass',function () {

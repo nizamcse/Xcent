@@ -50,12 +50,3 @@ $(document).ready(function () {
     img.hide().after( $tiles );
 
 });
-
-
-
-
-$(document).ready(function () {
-    $(".zious-default-nav").find('.dropdown-ul').each(function () {
-        console.log($(this).closest("li").left());
-    });
-});

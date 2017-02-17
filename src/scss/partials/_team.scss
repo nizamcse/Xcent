@@ -1,0 +1,43 @@
+.team{
+  padding: 90px 0px;
+  background-color: #f7f7f7;
+  .team-card-style-1{
+    background-color: #fff;
+    @include box_shadow (1);
+    padding: 15px;
+    margin: 15px;
+    .team-1-figure{
+      position: relative;
+    }
+  }
+}
+.social-vertical-menu{
+  position: absolute;
+  top:0;
+  right:0;
+  margin:0;
+  padding: 0;
+  list-style: none;
+  li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    a{
+      display: block;
+      background-color: #ff205a;
+      color: #fff !important;
+      text-align: center;
+      margin-bottom: 1px;
+      width: 36px;
+      height: 36px;
+      padding: 6px;
+      line-height: 24px;
+      .social-icon{
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
