@@ -1,20 +1,21 @@
 mixin bootstrapNavbar(navbarClass,iconClass,logo)
 
-    .navbar.navbar-toggleable-md.navbar-light.bg-faded(class=navbarClass)
-      button.navbar-toggler.navbar-toggler-right(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
-        span(class=iconClass)
-      a.navbar-brand(href="index.html")
-        img.brand-logo(src=logo)
+    .container-fluid
+        .navbar.navbar-toggleable-md.navbar-light.bg-faded(class=navbarClass)
+          button.navbar-toggler.navbar-toggler-right(type="button",data-toggle="collapse",data-target="#navbarSupportedContent",aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
+            span(class=iconClass)
+          a.navbar-brand(href="index.html")
+            img.brand-logo(src=logo)
 
-      .collapse.navbar-collapse(id="navbarSupportedContent")
-        ul.navbar-nav.mr-auto
-          li.nav-item
-            a.nav-link(href="#") Home
-                span.sr-only current
-          li.nav-item
-            a.nav-link(href="#") Link
-          li.nav-item
-            a.nav-link.disabled(href="#") Disabled
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.mr-auto.pull-md-right
+              li.nav-item
+                a.nav-link(href="#") Home
+                    span.sr-only current
+              li.nav-item
+                a.nav-link(href="#") Link
+              li.nav-item
+                a.nav-link.disabled(href="#") Disabled
 
 
 
@@ -48,3 +49,23 @@ mixin socialNavMenu_2(navlist)
                         span.icon
                             i(class=list.icon)
                         span.text=list.text
+
+
+
+mixin ziousTop()
+    nav.zious-navbar
+        .nav-header
+            a#toggle-top-nav.toggle-btn(href='#')
+                i.ion-navicon
+        .zious-brand
+            a(href='#')
+                img.logo(src='../image/logo.png')
+        ul.zious-default-nav
+            li.dropdown
+                a(href='#') Home
+                ul.dropdown-ul
+                    li.dropdown
+                        a(href='#') Home-1
+                        ul.dropdown-ul
+                            li
+                                a(href='#') Home-2
