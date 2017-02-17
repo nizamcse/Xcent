@@ -50,3 +50,12 @@ $(document).ready(function () {
     img.hide().after( $tiles );
 
 });
+$(document).ready(function () {
+    // init Isotope
+    var $grid = $('.grid').isotope();
+// filter items on button click
+    $('.filter-button-group').on( 'click', '.btn-filter', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+});
