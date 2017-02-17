@@ -1,3 +1,4 @@
+include social-menu.pug
 mixin figure(figureClass,image)
     figure(class=figureClass)
         img.responsive-img(src=image)
@@ -16,3 +17,11 @@ mixin figure_2(figureClass,image)
         img.responsive-img(src=image)
         img.responsive-img(src=image)
 
+mixin figure_with_menu(figureClass,image,name,designation)
+    .team-card-style-1
+        figure(class=figureClass)
+            img.responsive-img(src=image)
+            +socialMenu("social-vertical-menu",["ion-social-facebook-outline","ion-social-instagram-outline","ion-social-github-outline","ion-social-googleplus-outline"])
+        .team-content
+            h5=name
+            p=designation
