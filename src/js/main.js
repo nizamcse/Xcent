@@ -50,12 +50,26 @@ $(document).ready(function () {
     img.hide().after( $tiles );
 
 });
+
 $(document).ready(function () {
     // init Isotope
     var $grid = $('.grid').isotope();
 // filter items on button click
-    $('.filter-button-group').on( 'click', '.btn-filter', function() {
+    $('.filter-button-group').on('click', '.btn-filter', function () {
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+        $grid.isotope({filter: filterValue});
+    });
+});
+
+$(document).ready(function () {
+    $(".zious-default-nav").find("li.dropdown").each(function () {
+        var text= $(this).text();
+        var ww = $('body').width();
+        var d = (ww - $(this).prop('offsetLeft'));
+        if(d<250)
+        {
+            $(this).find(".dropdown-ul").addClass("right-0");
+        }
+        console.log(ww);
     });
 });
