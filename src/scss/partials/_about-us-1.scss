@@ -43,3 +43,31 @@
 .item-center{
   align-items: center;
 }
+
+.current{
+  .slide-item{
+    .tile{
+      animation-name: scalingTiles;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+
+
+@keyframes scalingTiles {
+  0%{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

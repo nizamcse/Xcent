@@ -25,3 +25,7 @@ mixin figure_with_menu(figureClass,image,name,designation)
         .team-content
             h5=name
             p=designation
+
+mixin OwlfigureSimple(images)
+    each image in images
+        div.slide-item(style="background-image: url("+'../image/intro/'+image+")")
