@@ -8,12 +8,24 @@ mixin bootstrapNavbar(navbarClass,iconClass,logo)
             img.brand-logo(src=logo)
 
           .collapse.navbar-collapse(id="navbarSupportedContent")
-            ul.navbar-nav.mr-auto.pull-md-right
+            ul.navbar-nav.mr-auto.pull-md-right#test
               li.nav-item
                 a.nav-link(href="#") Home
                     span.sr-only current
-              li.nav-item
+              li.nav-item.dropdown-item.dropdown-toggle(data-toggle="dropdown",aria-haspopup="true" ,aria-expanded="false")
                 a.nav-link(href="#") Link
+                ul.dropdown-ul.dropdown-menu
+                  li.nav-item.dropdown-item.dropdown-toggle(data-toggle="dropdown",aria-haspopup="true" ,aria-expanded="false")
+                      a.nav-link(href="#") Link
+                      ul.dropdown-ul.dropdown-menu
+                        li.nav-item.dropdown-item.dropdown-toggle(data-toggle="dropdown",aria-haspopup="true" ,aria-expanded="false")
+                            a.nav-link(href="#") Link
+                            ul.dropdown-ul.dropdown-menu
+                              li.nav-item
+                                a.nav-link(href="#") Home
+                                    span.sr-only current
+
+
               li.nav-item
                 a.nav-link.disabled(href="#") Disabled
 
@@ -61,11 +73,27 @@ mixin ziousTop()
             a(href='#')
                 img.logo(src='../image/logo.png')
         ul.zious-default-nav
-            li.dropdown
+             li
                 a(href='#') Home
+             li.dropdown
+                a(href='#') About
                 ul.dropdown-ul
                     li.dropdown
                         a(href='#') Home-1
                         ul.dropdown-ul
                             li
                                 a(href='#') Home-2
+             li.dropdown
+                a(href='#') Contact
+             li
+                a(href='#') Home
+             li.dropdown
+                a(href='#') About
+                ul.dropdown-ul
+                    li.dropdown
+                        a(href='#') Home-1
+                        ul.dropdown-ul
+                            li
+                                a(href='#') Home-2
+             li.dropdown
+                a(href='#') Contact

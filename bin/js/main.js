@@ -51,11 +51,16 @@ $(document).ready(function () {
 
 });
 
-
-
-
 $(document).ready(function () {
-    $(".zious-default-nav").find('.dropdown-ul').each(function () {
-        console.log($(this).closest("li").left());
+    $(".zious-default-nav").find("li.dropdown").each(function () {
+        var text= $(this).text();
+        var ww = $('body').width();
+        var d = (ww - $(this).prop('offsetLeft'));
+        if(d<250)
+        {
+            $(this).find(".dropdown-ul").addClass("right-0");
+        }
+        console.log(ww);
     });
+
 });

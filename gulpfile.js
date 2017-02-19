@@ -52,6 +52,10 @@ gulp.task('movelib',function () {
         .pipe(gulp.dest('bin/final-product/lib/jquery/'));
     gulp.src('node_modules/tether/dist/js/*.min.js')
         .pipe(gulp.dest('bin/final-product/lib/tether/'));
+    gulp.src('node_modules/smartmenus/dist/*.min.js')
+        .pipe(gulp.dest('bin/final-product/lib/smartmenus/'));
+    gulp.src('node_modules/smartmenus/dist/css/*.css')
+        .pipe(gulp.dest('bin/final-product/lib/smartmenus/'));
 
 });
 gulp.task('watchsass',function () {

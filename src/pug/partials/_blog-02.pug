@@ -1,0 +1,12 @@
+include ../modules/figure.pug
+include ../modules/blog-content.pug
+
+
+mixin blog_02()
+    section.blog-02-wrapper
+        div.container
+            .row
+                .col-md-6.col-sm-12
+                    +figure('blog-fig','../image/blog/blog_3.jpg')
+                .col-md-6.col-sm-12
+                    +blog_content('blog-content-wrapper','WELCOME TO OUR','CALIFORNIA','Quisque vel magna quis massa finibus facilisis. Aenean a lacinia erat, id venenatis turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dignissim scelerisque auctor. Nulla facilisi. Suspendisse pulvinar lacinia erat.','zious-btn','WATCH THE FILM')
