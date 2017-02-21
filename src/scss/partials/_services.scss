@@ -8,7 +8,7 @@
     text-transform: uppercase;
     margin-bottom: 60px;
     h6 {
-      color: #6f6f6f;
+      color:$color-10;
       margin-top: 0px;
     }
   }
@@ -17,7 +17,7 @@
       position: relative;
       .service-icon{
         position: absolute;
-        color: #ff205a;
+        color: $color-1;
           i{
             font-size: 31px;
           }
@@ -27,13 +27,14 @@
         padding:0px 20px 0px 65px;
           h5{
             margin-bottom: 15px;
-            color: #444;
+            color:$color-11;
           }
         p{
-          color: #808080;
+          color:$color-5;
         }
       }
     }
   }
 }
+
 
