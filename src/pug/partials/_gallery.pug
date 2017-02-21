@@ -9,200 +9,153 @@ mixin gallery()
             .gallery-menu
                 ul.gallery-ul
                     li
-                        a ALL
+                        a(data-filter="*") ALL
                     li
-                        a PHOTHOGRAPHY
+                        a(data-filter=".s-img") PHOTHOGRAPHY
                     li
                         a WEB
                     li
-                        a ILLUSTRATION
+                        a(data-filter=".t-img") ILLUSTRATION
                     li
                         a MULTIMEDIA
                     li
                         a APPS
             .gallery-imgs
-                .row
-                    .col-md-3
+                .row.isotop-gallery
+                    .col-md-3.f-img.col-sm-6
                         .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
+                            +figure("product-img","../image/masonry/1.jpg")
                             .hover-gallery.text-center
                                 .middle-alignment
                                     p
-                                        a.icons
+                                        a.img-link-popup.icons(href="../image/masonry/1.jpg")
                                             i.ion-ios-search
                                     .gallery-hover-text
                                         +title(4,"EXTERNAL LINK")
                                         +title(6,"EXTERNAL LINK")
-                    .col-md-3
+                    .col-md-3.s-img.col-sm-6
                         .gallery-card
-                            +figure("product-img","../image/blog/2.jpg")
+                            +figure("product-img","../image/masonry/2.jpg")
                             .hover-gallery.text-center
                                 .middle-alignment
                                     p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"LIGHTBOX VIEW")
-                                        +title(6,"Artworks")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/3.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"EXTERNAL LINK")
-                                        +title(6,"Photography")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"VIDEOBOXVIEW")
-                                        +title(6,"Videography")
-                .row
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
+                                        a.img-link-popup.icons(href="../image/masonry/2.jpg")
                                             i.ion-ios-search
                                     .gallery-hover-text
                                         +title(4,"EXTERNAL LINK")
                                         +title(6,"EXTERNAL LINK")
-                    .col-md-3
+                    .col-md-3.t-img.col-sm-6
                         .gallery-card
-                            +figure("product-img","../image/blog/2.jpg")
+                            +figure("product-img","../image/masonry/3.jpg")
                             .hover-gallery.text-center
                                 .middle-alignment
                                     p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"LIGHTBOX VIEW")
-                                        +title(6,"Artworks")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/3.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
+                                        a.img-link-popup.icons(href="../image/masonry/3.jpg")
                                             i.ion-ios-search
                                     .gallery-hover-text
                                         +title(4,"EXTERNAL LINK")
-                                        +title(6,"Photography")
-                    .col-md-3
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.f-img.s-img.col-sm-6
                         .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
+                            +figure("product-img","../image/masonry/4.jpg")
                             .hover-gallery.text-center
                                 .middle-alignment
                                     p
-                                        a.icons
+                                        a.img-link-popup.icons(href="../image/masonry/4.jpg")
                                             i.ion-ios-search
                                     .gallery-hover-text
-                                        +title(4,"VIDEOBOXVIEW")
-                                        +title(6,"Videography")
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.t-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/5.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/5.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fo-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/6.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/6.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/7.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/7.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/8.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/8.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/12.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/12.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/10.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/10.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/12.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/12.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
+                    .col-md-3.s-img.fi-img.col-sm-6
+                        .gallery-card
+                            +figure("product-img","../image/masonry/12.jpg")
+                            .hover-gallery.text-center
+                                .middle-alignment
+                                    p
+                                        a.img-link-popup.icons(href="../image/masonry/12.jpg")
+                                            i.ion-ios-search
+                                    .gallery-hover-text
+                                        +title(4,"EXTERNAL LINK")
+                                        +title(6,"EXTERNAL LINK")
 
-                .row
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"EXTERNAL LINK")
-                                        +title(6,"EXTERNAL LINK")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/2.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"LIGHTBOX VIEW")
-                                        +title(6,"Artworks")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/3.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"EXTERNAL LINK")
-                                        +title(6,"Photography")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"VIDEOBOXVIEW")
-                                        +title(6,"Videography")
 
-                .row
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/3.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"EXTERNAL LINK")
-                                        +title(6,"EXTERNAL LINK")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/1.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"LIGHTBOX VIEW")
-                                        +title(6,"Artworks")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/2.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"EXTERNAL LINK")
-                                        +title(6,"Photography")
-                    .col-md-3
-                        .gallery-card
-                            +figure("product-img","../image/blog/3.jpg")
-                            .hover-gallery.text-center
-                                .middle-alignment
-                                    p
-                                        a.icons
-                                            i.ion-ios-search
-                                    .gallery-hover-text
-                                        +title(4,"VIDEOBOXVIEW")
-                                        +title(6,"Videography")
 mixin isotope()
     .grid
         .filter-button-group

@@ -49,6 +49,7 @@ $(document).ready(function () {
     // Hide original image and insert tiles in DOM
     img.hide().after( $tiles );
 
+<<<<<<< HEAD
 });
 
 $(document).ready(function () {
@@ -365,3 +366,43 @@ $(document).ready(function(){
     });
 });
 
+=======
+
+    $('.gallery-ul').on( 'click','a', function() {
+        var filterValue = $(this).attr('data-filter');
+        $('.isotop-gallery').isotope({ filter: filterValue });
+        //alert();
+    });
+
+
+
+
+    $('.img-link-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled:true
+        }
+    });
+
+});
+
+
+$(window).on('load', function() {
+
+    var $c = $('.isotop-gallery');
+    
+    $(".isotop-gallery").imagesLoaded().always( function( instance ) {
+        $c.isotope({
+            itemSelector: '.col-md-3',
+            resizesContainer: false,
+            layoutMode: 'masonry',
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.col-md-3'
+            },
+            filter: "*"
+        });
+    });
+
+});
+>>>>>>> dev-jami

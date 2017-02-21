@@ -9,22 +9,22 @@
     .btn-group{
         margin-top: 25px;
         .btn-see{
-            background-color: #ff205a;
-            color: #fff;
+            background-color: $bg-color-4;
+            color: $color-2;
             margin-right: 10px;
             border-radius: 2px;
             text-transform: uppercase;
-            border: 2px solid #ff205a;
+            border: 2px solid $color-1;
         }
         .btn-get{
             background: transparent;
-            color: #ff205a;
+            color: $color-1;
             border-radius: 2px;
             text-transform: uppercase;
-            border: 2px solid #ff205a;
+            border: 2px solid $color-1;
             margin-right: 0px;
             &:hover{
-                background-color:#ff9090;
+                background-color:$bg-color-12;
             }
 
         }
@@ -33,30 +33,30 @@
 .loving-us {
   padding: 40px 0px;
   margin-bottom: 10px;
-  background-color: #F5F5F5;
+  background-color:$bg-color-9;
   .align-items {
     align-items: center;
     h5 {
-      color: #292b2c;
+      color: $color-16;
       .number {
-        color: #ff205a;
+        color: $color-1;
         margin: 0px 10px;
         font-family: "Lora",serif;
         font-weight: 700;
       }
     }
     p {
-      color: #6F6F6F;
+      color: $color-10;
     }
     .btn-live {
       background: transparent;
-      color: #ff205a;
+      color: $color-1;
       border-radius: 2px;
       text-transform: uppercase;
-      border: 1px solid #ff205a;
+      border: 1px solid $color-1;
       margin-right: 0px;
       &:hover {
-        background-color: #ff9090;
+        background-color:$bg-color-12;
       }
     }
   }

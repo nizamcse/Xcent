@@ -48,6 +48,8 @@ gulp.task('movelib',function () {
         .pipe(gulp.dest('bin/final-product/lib/ionicons/fonts'));
     gulp.src('node_modules/isotope-layout/dist/**/*.min.js')
         .pipe(gulp.dest('bin/final-product/lib/isotope-layout/'));
+    gulp.src('node_modules/masonry-layout/dist/*.min.js')
+        .pipe(gulp.dest('bin/final-product/lib/masonry-layout/'));
     gulp.src('node_modules/jquery/dist/*.min.js')
         .pipe(gulp.dest('bin/final-product/lib/jquery/'));
     gulp.src('node_modules/tether/dist/js/*.min.js')
@@ -58,6 +60,12 @@ gulp.task('movelib',function () {
         .pipe(gulp.dest('bin/final-product/lib/smartmenus/'));
     gulp.src('node_modules/smartmenus/dist/css/*.css')
         .pipe(gulp.dest('bin/final-product/lib/smartmenus/'));
+    gulp.src('node_modules/imagesloaded/*.min.js')
+        .pipe(gulp.dest('bin/final-product/lib/imagesloaded/'));
+    gulp.src('node_modules/magnific-popup/dist/*.min.js')
+        .pipe(gulp.dest('bin/final-product/lib/magnific-popup/'));
+    gulp.src('node_modules/magnific-popup/dist/magnific-popup.css')
+        .pipe(gulp.dest('bin/final-product/lib/magnific-popup/'));
 
 });
 gulp.task('watchsass',function () {

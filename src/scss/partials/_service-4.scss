@@ -2,17 +2,17 @@
     padding: 40px 0px;
     margin-top: 0px;
     margin-bottom: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #E2E2E2;
+    background-color:$bg-color-6;
+    border-bottom: 1px solid $color-6;
     .process-heading {
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 60px;
         h6 {
-            color: #6F6F6F;
+            color: $color-10;
         }
         h4 {
-            color: #000000;
+            color: $color-12;
             margin-top: 10px;
         }
     }
@@ -20,19 +20,19 @@
         .process-card{
            text-align: center;
             .promo-box{
-                border-left:1px solid #dddddd;
-                border-right:1px solid #dddddd;
+                border-left:1px solid $color-13;
+                border-right:1px solid $color-13;
                 transition: all 450ms ease-in-out;
                 &:hover{
-                    border-left:1px solid #ff205a;
-                    border-right:1px solid #ff205a;
+                    border-left:1px solid $color-1;
+                    border-right:1px solid $color-1;
                     i{
-                        color: #ff205a;
+                        color: $color-1;
                     }
                 }
                 .process{
                     font-size: 60px;
-                    color: #8e7a7a;
+                    color: $color-14;
                     padding: 15px;}
             }
         }
