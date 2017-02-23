@@ -1,0 +1,46 @@
+include ../modules/single-button.pug
+
+mixin contact()
+    .container
+        .row
+            .col-md-6
+                .contact-form
+                    .row
+                        .col-md-6
+                            p.info-address
+                                span
+                                    i.icon-bookmark
+                                strong
+                                    | SEC boys hall
+                                br
+                                | Sylhet Engineering College
+
+                        .col-md-6
+                            p.info-address
+                                span
+                                    i.icon-bookmark
+                                strong
+                                    a(href="#")
+                                        | +087876686709
+                                br
+                                | email@xcent.com
+                    .contact-box
+                        form
+                            .form-group
+                                label
+                                input.form-control(type="text",placeholder="name")
+
+                            .form-group
+                                label
+                                input.form-control(type="email",placeholder="email")
+
+                            .form-group
+                                label
+                                textarea.form-control(type="text",placeholder="type your message",rows="5")
+
+
+                            .form-group
+                                a.btn.btn-default.btn-form-button
+                                    | send
+
+
