@@ -49,6 +49,7 @@ $(document).ready(function () {
     // Hide original image and insert tiles in DOM
     img.hide().after( $tiles );
 
+<<<<<<< HEAD
 });
 
 $(document).ready(function () {
@@ -363,7 +364,9 @@ $(document).ready(function(){
     $(function() {
         setInterval( "slideSwitch()", 3000 );
     });
+});
 
+=======
 
     $('.gallery-ul').on( 'click','a', function() {
         var filterValue = $(this).attr('data-filter');
@@ -402,3 +405,4 @@ $(window).on('load', function() {
     });
 
 });
+>>>>>>> dev-jami
