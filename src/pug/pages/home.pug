@@ -11,16 +11,20 @@ include ../partials/_team.pug
 include ../partials/_skils.pug
 include ../partials/_gallery.pug
 include ../partials/_classic-header.pug
+include ../partials/about-us-1.pug
 block main
     +classic()
+    +about_us_1("about-us-1","about")
     +servicesSection()
     +link()
+    +gallery()
+    +our_news()
+    +counter()
     +clients()
     +process()
-    +partner()
-    +counter()
-    +our_news()
-    +our_team()
     +skils()
-    +gallery()
+    +our_team()
+    +partner()
+
+
 
