@@ -1,0 +1,27 @@
+  .service-content {
+    .service-item {
+      position: relative;
+      .service-icon-2{
+        color: $color-1;
+        text-align: center;
+        i{
+          font-size: 50px;
+        }
+      }
+      .service-text-2{
+        margin:35px 0px;
+        padding: 0;
+        text-align: center;
+        h5{
+          margin-bottom: 15px;
+          color:$color-11;
+        }
+        p{
+          color:$color-5;
+        }
+      }
+    }
+  }
+
+
+

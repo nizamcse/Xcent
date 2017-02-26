@@ -20,7 +20,7 @@
       margin-left: auto;
     }
     .news-card-content{
-      padding:0px 30px;
+      padding:0px 15px!important;
       h5{
         margin: 25px 0px 20px 0px;
       }
@@ -37,11 +37,24 @@
         }
       }
     }
-    .blog-post-date-sticker{
-      position: absolute;
-      top: 0;
-      left:0;
+    .blog-card-title{
+      display: block;
+      position: relative;
+      width:100%;
+      overflow: hidden;
+      padding-top: 30px;
+      h5{
+        display: inline-block;
+        float: left;
+        width: calc(100% - 106px);
+        margin-left: 24px;
+        padding-left: 15px;
+      }
+    .blog-post-date-sticker-2{
       width:80px;
+      display: inline-block;
+      float: left;
+      }
       .sticker-container{
         position: relative;
         background-color: #fff;

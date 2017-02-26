@@ -1,0 +1,30 @@
+.blog-card-footer{
+  display: block;
+  margin: 0;
+  padding: 15px 0px;
+}
+.blog-footer-menu{
+  display: block;
+  list-style: none;
+  overflow: hidden;
+  margin: 0 -15px;
+  padding: 0;
+  li{
+    display: inline-block;
+    float: left;
+    padding:0px 10px;
+    cursor: pointer;
+
+    a{
+
+      display: inline-block;
+      font-size: 14px;
+      padding: 5px;
+    }
+    span{
+      display: inline-block;
+      font-size: 12px;
+
+    }
+  }
+}
