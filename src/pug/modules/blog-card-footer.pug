@@ -1,0 +1,7 @@
+mixin blog_footer(items)
+    ul.blog-footer-menu
+        each item in items
+            li
+                a
+                    i(class=item.icon)
+                span=item.text
