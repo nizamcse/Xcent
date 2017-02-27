@@ -1,0 +1,11 @@
+include ../modules/title-modules.pug
+include ../modules/footer-modules.pug
+include ../modules/title-modules.pug
+
+mixin footer_01()
+    .container
+        .bg-default-theme
+            .row
+                .col-md-3
+                    .address-footer-widget
+                       +footer_content("tag-name","e-mail:",["info@themewagon.com"])

@@ -1,0 +1,12 @@
+include ../modules/testimonial.pug
+include ../modules/title-para-hr.pug
+
+mixin testimonia_case()
+    section.testimonial.bg-full.overlay-default(style="background-image:url(../image/backgrounds/bg-testimonial.jpg)")
+        .container
+            .testimonial-header.theme-default-header
+                +title_para_hr('','',2,"CLIENT TESTIMONIALS",["SEE WHAT OUR CUSTOMERS HAVE TO SAY ABOUT US"],"hr")
+
+            .row
+                .client-box
+                    +testimonial("client-face","../image/team/team-2.jpg",["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil. Fugiat ipsum officia reprehenderit rerum saepe. Assumenda distinctio, voluptatibus"],"4","Jhon Obei michel",["founder"])

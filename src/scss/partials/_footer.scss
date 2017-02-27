@@ -1,0 +1,98 @@
+.footer-theme.bg-full.overlay-default{
+  padding: 20px;
+  color: #f7f7f7;
+
+ .footer-wrapper-widget{
+   margin:0;
+   padding:0;
+   .company-fact-widget{
+     h5{
+       font-weight: 700;
+       text-align: left;
+       margin-bottom: 30px;
+       color: #f7f7f7;
+     }
+     p{
+       margin-bottom: 6px;
+     }
+     .attr-name{
+       font-weight: 700;
+     }
+     .id-name{
+       text-decoration: none;
+       &:hover{
+         color: #1d1e1f;
+         cursor: pointer;
+       }
+     }
+
+   }
+   .footer-menu-widget{
+     overflow: hidden;
+    .attr-name{
+      font-weight: 700;
+    }
+
+     .social-widget{
+       display: block;
+       margin: 0 auto;
+       padding: 0;
+
+       li{
+         list-style: none;
+         display: inline-flex;
+         padding: 10px;
+       }
+     }
+   }
+ }
+}
+.subscribe{
+  padding: 0;
+  margin: 0;
+  h5{
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #f7f7f7;
+  }
+}
+.subscription-form{
+  .attr-name{
+    font-weight: 700;
+  }
+  .form-group{
+    .form-control{
+      padding: 7px 10px;
+      font-size: 12px;
+      line-height: 1;
+      border-radius: 0;
+      background-color: transparent;
+      border: 1px solid #f7f7f7;
+      &:focus{
+        border: 1px solid #FFFFFF;
+        border-radius: 0;
+        cursor: pointer;
+        color: #f7f7f7;
+      }
+    }
+    .btn-theme-default{
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 2px;
+      padding: 9px 9px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      color: #FFFFFF;
+    }
+  }
+}
+.footer-about-section-widget{
+
+  h5{
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #f7f7f7;
+  }
+}

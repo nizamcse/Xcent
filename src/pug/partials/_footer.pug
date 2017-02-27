@@ -1,38 +1,42 @@
-include ../modules/squad.pug
 include ../modules/title-modules.pug
 include ../modules/social-menu.pug
-include ../modules/gallery.pug
+include ../modules/price.pug
+include ../modules/single-button.pug
 
 mixin footer()
     .container
-        .row
-            .col-md-3
-                .logo-footer
-                    +figure("","a.jpg")
+        section.footer-theme.bg-full.overlay-default(style="background-image:url(../image/backgrounds/bg-testimonial.jpg)")
+            .row
+                .col-md-4
+                    .footer-wrapper-widget
+                        .company-fact-widget
+                            +title(5,"Xcent")
+                            +multiple_span("attr-name","email:","id-name"," xcent@gmail.com")
+                            +multiple_span("attr-name","call us:","id-name"," +043034043-43")
+                            br
+                            +paragraph(["1210,eco garden,gundua#446","arsenal the gunner,","bermingham,2400."])
 
-            .col-md-3
-                .footer-description
-                    +paragraph(["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil."])
+                        .footer-menu-widget
+                            span.attr-name
+                                | follow us:
+                            +socialMenu("social-widget",["ion-social-facebook", "ion-social-google", "ion-social-youtube", "ion-social-javascript", "ion-social-linkedin"])
 
-            .offset-md-3
-                .gallery-footer
-                    +gallery([{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"},{"link":"#","src":"a.jpg"}])
 
-        .row
-            .col-md-4
-                .coyright
-                    +paragraph(["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil."])
 
-            .col-md-4
-                .footer-menu-list
-                    +socialMenu("footer-menu",["ion-ios-facebook","ion-ios-facebook","ion-ios-facebook"])
+                .col-md-4
+                    .subscribe
+                        +title(5,"subscribe to our newsletter")
+                        +paragraph(["For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective."])
+                    .subscription-form
+                        span.attr-name
+                            | enter your email: *
+                        form.form.form-inline
+                            .form-group
+                                label
+                                    input.form-control(type="email",placeholder="subscribe here")
+                                    input.form-control.btn.btn-default.btn-theme-default(type="submit",value="subscribe")
 
-            .col-md-4
-                .footer-link-privacy
-                    span
-                        a
-                            +paragraph(["author"])
-
-                    span
-                        a
-                            +paragraph(["privacy required"])
+                .col-md-4
+                    .footer-about-section-widget
+                        +title(5,"all you need know about the pricing consolation of Xcent")
+                        +paragraph(["Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat ex eget sollicitudin eget."])
