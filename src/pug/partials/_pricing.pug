@@ -1,0 +1,84 @@
+include ../modules/price.pug
+include ../modules/title-modules.pug
+include ../modules/title-para-hr.pug
+include ../modules/single-button.pug
+include ../modules/squad.pug
+
+mixin price_info()
+    .container
+        .price-info.theme-default-header
+            +title_para_hr("","",2,"our pricing",["AMAZING SERVICES AT AFFORDABLE PRICE"],"35px")
+        .row
+            .col-md-3.col-sm-6
+                .pricing-wraper.text-center
+                    .pricing-header
+                        +title(4,"free")
+                    .price-tag
+                        +price("tag-sign","$","bold","67")
+
+                    .price-list
+                        +menu("value",[{"status": "normal", "name": "Up to 5 pages"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "normal", "name": "24/7 Support"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "disable", "name": "1 year hosting"}])
+                    .purchase.text-center
+                        +button("btn btn-default btn-purchase btn-theme-default","purchase now")
+
+            .col-md-3.col-sm-6
+                .pricing-wraper.text-center
+                    .pricing-header
+                        +title(4,"ultimate")
+                    .price-tag
+                        +price("tag-sign","$","bold","67")
+
+                    .price-list
+                        +menu("value",[{"status": "normal", "name": "Up to 5 pages"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "normal", "name": "24/7 Support"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "disable", "name": "1 year hosting"}])
+                    .purchase.text-center
+                        +button("btn btn-default btn-purchase btn-theme-default","purchase now")
+
+
+            .col-md-3.col-sm-6
+                .pricing-wraper.text-center
+                    .pricing-header
+                        +title(4,"premium")
+                    .price-tag
+                        +price("tag-sign","$","bold","67")
+
+                    .price-list
+                        +menu("value",[{"status": "normal", "name": "Up to 5 pages"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "normal", "name": "24/7 Support"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "disable", "name": "1 year hosting"}])
+                    .purchase.text-center
+                        +button("btn btn-default btn-purchase btn-theme-default","purchase now")
+
+
+            .col-md-3.col-sm-6
+                .pricing-wraper.text-center
+                    .pricing-header
+                        +title(4,"advanced")
+                    .price-tag
+                        +price("tag-sign","$","bold","67")
+
+                    .price-list
+                        +menu("value",[{"status": "normal", "name": "Up to 5 pages"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "normal", "name": "24/7 Support"}, {
+                            "status": "normal",
+                            "name": "1 year hosting"
+                        }, {"status": "disable", "name": "1 year hosting"}])
+                    .purchase.text-center
+                        +button("btn btn-default btn-purchase btn-theme-default","purchase now")

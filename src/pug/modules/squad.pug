@@ -16,7 +16,7 @@ mixin squad_cart(group_cart,figClass,imgFormat,titleTag,title,paragraph,menuList
 mixin figure(figClass,imgFormat)
     figure(class=figClass)
         if imgFormat
-            img(src=imgFormat)
+            img.responsive-img(src=imgFormat)
 
 mixin paragraph(paragraph)
     if paragraph

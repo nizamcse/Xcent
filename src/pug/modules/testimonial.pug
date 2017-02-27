@@ -1,0 +1,19 @@
+include figure.pug
+include title-modules.pug
+include squad.pug
+
+mixin testimonial(figClass,src,blockquote,titleTag,title,designation)
+    .client-image
+        if src
+            +figure(figClass,src)
+    .client-quote
+        if blockquote
+            +paragraph(blockquote)
+        if title
+            +title(titleTag,title)
+        if designation
+            each position in designation
+                p
+                    span.client-designation=position
+
+

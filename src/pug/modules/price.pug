@@ -1,0 +1,27 @@
+mixin price(tag,tag_sign,price,value)
+    .price
+        if tag
+            p
+
+                if price
+                    span(class=price)=value
+                        a.span(href="#" class=tag)=tag_sign
+mixin menu(ul_class,menu)
+    ul(class=ul_class)
+        each subMenu in menu
+            if (subMenu.status == 'disable')
+                li(class=subMenu.status)
+                    p=subMenu.name
+            else
+                li
+                    p=subMenu.name
+
+
+mixin multiple_span(id,attribute,mail_id,mail_address)
+        if mail_id
+            p
+                if id
+                    span(class=id)=attribute
+                    a
+                        span(href="#" class=mail_id)=mail_address
+
